@@ -271,7 +271,7 @@ const resetPassword = async (req, res) => {
         });
       }
 
-      user = await User.findById(otp.userId);
+       user = await User.findById(otpDoc.userId);
 
       // if (`${user.firstName} ${user.lastName}` !== name) {
       //   return res.status(401).json({
